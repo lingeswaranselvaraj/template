@@ -5,14 +5,14 @@ public class CodingChallenge {
         return "Hello";
     }
 
-    public void test (int a, int b){
+    public static void test (int a, int b){
         int sum = a+b;
+        System.out.println(sum);
         
     }
 
     public static void main(String[] args) {
-        test t=new test();
-        int valy= t.sum(1,2);
-        System.out.println(valy);
+        test(1,2);
+        
     }
 }
