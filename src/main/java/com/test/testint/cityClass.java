@@ -1,6 +1,8 @@
 package com.test.testint;
 
-public class cityClass {
+import java.util.Comparator;
+
+public class cityClass implements Comparable<cityClass>{
 
     private String airportCode;
     private long travelPeriod;
@@ -50,6 +52,15 @@ public class cityClass {
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
+
+    @Override
+    public int compareTo(cityClass o) {
+        // TODO Auto-generated method stub
+                return this.getCityName().compareTo(o.getCityName());
+    }
+
+    
+    
     
 
 

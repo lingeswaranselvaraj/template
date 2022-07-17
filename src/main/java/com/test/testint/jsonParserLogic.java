@@ -3,8 +3,12 @@ package com.test.testint;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -27,6 +31,7 @@ public class jsonParserLogic {
         ArrayList<cityClass> arraAdd= new ArrayList<>();
         while (it.hasNext()) {
             JSONArray jkA = it.next();
+            System.out.println("++++"+jkA);
             for (int i = 0; i < jkA.size(); i++) {
                 JSONObject jk = (JSONObject) (jkA.get(i));
                 System.out.println(jk.get("cityName"));
@@ -38,7 +43,23 @@ public class jsonParserLogic {
                 arraAdd.add(city);
             }
         }
-        System.out.println(arraAdd.toString());
+
+        arraAdd.stream().forEach((c) -> System.out.println(c.getAirportCode()));
+        Stream<cityClass> stream = arraAdd.stream();
+        List<cityClass> evenNumbersList = stream.filter(i -> i.getCityName().contains("h"))
+                                    .sorted()
+                                    .collect(Collectors.toList());
+                     Iterator<cityClass> newIt= evenNumbersList.iterator();
+                     
+                     while(newIt.hasNext()){
+
+                            String newVal=newIt.next().getCityName();
+                            System.out.println("++++++++++++"+newVal);
+                        
+                     }
+
+
+        
 
     }
 
