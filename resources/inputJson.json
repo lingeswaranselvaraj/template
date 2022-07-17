@@ -1,0 +1,56 @@
+[
+    {
+        "airportCode": "YFT",
+        "travelPeriod": 360,
+        "daysFromDeparture": 3,
+        "cityName": "Macao (Macau)"
+    },
+    {
+        "airportCode": "XZM",
+        "travelPeriod": 180,
+        "daysFromDeparture": 3,
+        "cityName": "Macao (Macau)"
+    },
+    {
+        "airportCode": "ZYK",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Shenzhen"
+    },
+    {
+        "airportCode": "ZTI",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Dongguan"
+    },
+    {
+        "airportCode": "ZGN",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Zhongshan"
+    },
+    {
+        "airportCode": "ZIY",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Guangzhou"
+    },
+    {
+        "airportCode": "FYG",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Shenzhen"
+    },
+    {
+        "airportCode": "NSZ",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Guangzhou"
+    },
+    {
+        "airportCode": "ZUI",
+        "travelPeriod": 360,
+        "daysFromDeparture": 1,
+        "cityName": "Zhuhai"
+    }
+]

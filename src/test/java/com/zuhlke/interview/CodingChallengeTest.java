@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import com.test.testint.CodingChallenge;
+import com.test.testint.laptopclas;
 
 public class CodingChallengeTest {
     @Test
@@ -12,7 +13,9 @@ public class CodingChallengeTest {
     }
     @Test
     public void testArithatic(){
-    Assertions.assertEquals(10, new CodingChallenge().test(1,2));
+    Assertions.assertEquals(3, new CodingChallenge().test(1,2));
     }
+
+    
 
 }
