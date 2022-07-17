@@ -1,5 +1,6 @@
 package com.test.testint;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,6 +20,11 @@ public class jsonParserLogic {
 
     public static void main(String[] args) throws Exception {
 
+             mainMethod(); 
+
+    }
+
+    public static String mainMethod() throws FileNotFoundException, IOException, ParseException{
         //Reading from JSON file
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(new FileReader("template/src/main/java/com/test/testint/inputJson.JSON"));
@@ -50,16 +56,15 @@ public class jsonParserLogic {
                                     .sorted()
                                     .collect(Collectors.toList());
                      Iterator<cityClass> newIt= evenNumbersList.iterator();
-                     
+                     String newVal=null;
                      while(newIt.hasNext()){
 
-                            String newVal=newIt.next().getCityName();
+                            newVal=newIt.next().getCityName();
                             System.out.println("++++++++++++"+newVal);
+                            break;
                         
                      }
-
-
-        
+                     return newVal;
 
     }
 
